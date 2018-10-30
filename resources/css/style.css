@@ -1,3 +1,7 @@
+/*-----------------------------------------------*/
+/*   BASIC SETUP */
+/*-----------------------------------------------*/
+
 * {
 
     margin: 0;
@@ -18,6 +22,11 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/*-----------------------------------------------*/
+/*   REUSUABLE COMPONENTS */
+/*-----------------------------------------------*/
+
+
 .row {
 
     max-width: 1140px;
@@ -25,6 +34,91 @@ html {
     margin: 0 auto;
     /* top i bottom su 0 , livo i desno su auto*/
 }
+
+/*-----------------------------------------------*/
+/*   HEADINGS */
+/*-----------------------------------------------*/
+
+h1 {
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    /*da nema margina do kraja stranica */
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* velika slova*/
+    letter-spacing: 1px;
+    word-spacing: 4px;
+
+}
+/*-----------------------------------------------*/
+/*   BUTTONS */
+/*-----------------------------------------------*/
+
+
+.btn:link,
+.btn:visited {
+    /* ove dvije pseudo dvi klase sluze da posjeceni link je jednak onome koji nije ,znaci nece biti oznacen plavom bojom ili kako je vec na drugim stranicama*/
+
+    display: inline-block;
+    padding: 10px 30px;
+    /*top left ,bottom right*/
+    font-weight: 300;
+    text-decoration: none;
+    /* da bude bez underline crta kao standardni hyperlink text */
+    border-radius: 200px;
+    /* da btn bude okrugao >>sva dugmad<<<<*/
+    transition: background-color 0.25s, border 0.25s, color 0.25s; /* brzina prijelaza boja kad mis dodje iznas buttona*/
+
+}
+
+.btn-full:link,
+.btn-full:visited {
+
+    background-color: #ffeaa7;
+    border: 1px solid #ffeaa7;
+    /*dodao sam odi border jer ghost btn izgleda za taj 1px veci vizualno */
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #ffeaa7;
+    /*border buttona kji nema startnu boju nego samo okvir */
+    color: #ffeaa7;
+
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ffca1f;
+
+}
+
+
+.btn-full:hover
+.btn-full:active {
+
+
+    border: 1px solid #ffca1f;
+    /*dodao sam odi border jer ghost btn izgleda za taj 1px veci vizualno */
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #ffca1f;
+    /*border buttona kji nema startnu boju nego samo okvir */
+    color: #fff;
+
+}
+
+/*-----------------------------------------------*/
+/*   HEADER */
+/*-----------------------------------------------*/
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
@@ -48,54 +142,16 @@ header {
 
 }
 
-h1 {
+.logo {
 
-    margin-top: 0;
-    margin-bottom: 20px;
-    /*da nema margina do kraja stranica */
-    color: #fff;
-    font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    /* velika slova*/
-    letter-spacing: 1px;
-    word-spacing: 4px;
+   height: 100px;
+    width: auto;
+    float: left;
 
 }
 
-.btn:link,
-.btn:visited {
-    /* ove dvije pseudo dvi klase sluze da posjeceni link je jednak onome koji nije ,znaci nece biti oznacen plavom bojom ili kako je vec na drugim stranicama*/
 
-    display: inline-block;
-    padding: 10px 30px;
-    /*top left ,bottom right*/
-    font-weight: 300;
-    text-decoration: none;
-    /* da bude bez underline crta kao standardni hyperlink text */
-    border-radius: 200px;
-    /* da btn bude okrugao >>sva dugmad<<<<*/
+.main-nav{
 
-}
-
-.btn-full:link .btn-full:visited {
-
-    background-color: #ffeaa7;
-    border: 1px solid #ffeaa7;
-    /*dodao sam odi border jer ghost btn izgleda za taj 1px veci vizualno */
-    color: #fff;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #ffeaa7;
-    /*border buttona kji nema startnu boju nego samo okvir */
-    color: #ffeaa7;
-
-}
-
-.btn:hover,
-.btn:active {
-    background-color: #ffca1f;
-
+    float: right
 }
