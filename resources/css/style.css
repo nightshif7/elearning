@@ -147,11 +147,38 @@ header {
    height: 100px;
     width: auto;
     float: left;
+    margin-top: 20px;
 
 }
 
 
 .main-nav{
 
-    float: right
+    float: right;
+    list-style: none ; /*ako ne zelimo oznake table list . */
+    margin-top: 55px;
+    
+}
+
+
+.main-nav li {
+    display: inline-block; /*da budu jedan kraj drugog */
+    margin-left: 40px; /*sa razmakom od 40px*/
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%; /*font size baza je 20px ,sve drugo radimo u % */
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #ffeaa7;
+    
 }
